@@ -1,0 +1,33 @@
+aside
+{
+    margin-top: 4rem;
+    width: 22%;
+    height: auto;
+    overflow-x: hidden;
+    transition: 0.5s all ease;
+    position: fixed;
+}
+aside.active
+{
+    width: 0;
+}
+aside .sidebar
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 5rem;
+    
+}
+aside .sidebar a 
+{
+    color: var(--third-color);
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: 0.5s all ease;
+    font-weight: 600;
+}
+aside .sidebar a:hover 
+{
+    color: var(--third-color);
+}

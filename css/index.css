@@ -1,0 +1,33 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "sans-serif";
+    scroll-behavior: smooth;
+}
+body
+{
+    background-color: var(--primary-color);
+    transition: 0.5s all ease;
+}
+:root
+{
+    --primary-color: rgb(20, 32, 43);
+    --secondary-color: #fff;
+    --third-color: rgb(36, 212, 212);
+    --fourth-color: rgb(18, 151, 151);
+    
+    --wp-represent-font-size-small: 14px;
+    --wp-represent-font-size-normal: 18px;
+    --wp-represent-font-size-medium: 24px;
+    --wp-represent-font-size-large: 28px;
+    --wp-represent-font-size-x-large: 36px;
+}
+.light-theme
+{
+    --primary-color: #fefefe;
+    --secondary-color: rgb(20, 32, 43);
+    --third-color: rgb(18, 151, 151);
+    --fourth-color : rgb(36, 212, 212);
+}

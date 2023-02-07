@@ -1,0 +1,287 @@
+main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
+    gap: 4rem;
+}
+.first-container
+{
+    text-align: center; 
+    margin-top: 8rem;
+    height: auto;
+    width: 100%;
+}
+/*------------------------Font Animation-----------------*/
+.first-container h1 
+{
+    font-size: var(--wp-represent-font-size-x-large);
+    font-weight: 400;
+    font-family: 'Henny Penny', cursive;
+    color: var(--secondary-color);
+    -webkit-text-stroke: 0.1vw var(--secondary-color);
+}
+.first-container h1::before 
+{
+    content: attr(data-text);
+    color: var(--third-color);
+    position: absolute;
+    -webkit-text-stroke: 0.1vw var(--third-color);
+    border-right: 2px solid var(--third-color);
+    overflow: hidden;
+    animation: animate 3s linear infinite;
+}
+@keyframes animate
+{
+    0%, 10%, 100%
+    {
+        width: 0;
+    }
+    70%, 90%
+    {
+        width: 306px;
+    }
+}
+.first-container .first-all-content
+{
+    background-image: linear-gradient(to right, var(--primary-color) , var(--secondary-color));
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 3rem;
+}
+.first-container .first-all-content h2 
+{
+    font-family: Comic Sans MS;
+}
+.first-container .first-all-content h2 span 
+{
+    font-family: Comic Sans MS;
+    color: var(--third-color);
+}
+/*----First Home Page Content----*/
+.first-container .first-home-page
+{
+    font-size: var(--wp-represent-font-size-large);
+    color: var(--secondary-color);
+    width: 400px;
+}
+.first-container .first-home-page i 
+{
+    font-size: 146px;
+}
+.first-container .first-home-page p 
+{
+    font-family: Comic Sans MS;
+    font-size: var(--wp-represent-font-size-small);
+}
+/*----Second Home Page Content----*/   
+.first-container .second-home-page
+{
+    color: var(--primary-color);
+    flex-wrap: wrap;
+    width: 400px;
+    font-size: var(--wp-represent-font-size-large);
+}
+.first-container .second-home-page p 
+{
+    margin-top: 1rem;
+    font-size: var(--wp-represent-font-size-normal);
+    font-family: Ink Free;
+    font-weight: 600;
+}
+.first-container .second-home-page p span 
+{
+    color: var(--fourth-color);
+}
+/*------------SECOND CONTAINER------------*/
+.second-container
+{
+    margin: auto;
+}
+.second-container h1 
+{
+    font-size: var(--wp-represent-font-size-large);
+    font-weight: 400;
+    font-family: Comic Sans MS;
+    color: var(--secondary-color);
+    -webkit-text-stroke: 0.1vw var(--secondary-color);
+}
+.second-container .image
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: auto;
+    padding: 4rem;
+    border-radius: 1rem;
+}
+.second-container .image .project
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 250px;
+}
+.second-container .image .project-img
+{
+    border: 4px solid var(--primary-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 6px 4px 4px 2px var(--primary-color);
+}
+.second-container .image .project h3
+{
+    margin-top: 2rem;
+    font-family: sans-serif;
+    font-size: var(--wp-represent-font-size-normal);
+    color: var(--primary-color);
+}
+.second-container .image .project article
+{
+    margin-top: 1rem;
+    font-family: Comic Sans MS;
+    font-weight: 200;
+    font-size: var(--wp-represent-font-size-small);
+    color: var(--primary-color);
+}
+/*------------------THIRD CONTAINER-------------------*/
+.third-container
+{
+    margin: auto;
+    width: 80%;
+    height: auto;
+    border-radius: 1rem;
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+.third-container h1 
+{
+    color: var(--primary-color);
+    font-family: Comic Sans MS;
+    font-size: var(--wp-represent-font-size-large);
+}
+/*----------------PAGE SWITCHER--------------------*/
+.switch-tabs
+{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+/*----BUTTON SWITCHER PAGE---*/
+.switch-tabs button 
+{
+    font-size: var(--wp-represent-font-size-normal);
+    font-family: Ink Free;
+    padding: 1rem;
+}
+.switch-tabs .tabs_button
+{
+    border: none;
+    display: block;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    width: 20%;
+    border-radius: 3rem;
+}
+.switch-tabs .tabs_button--active
+{
+    display: block;
+    background: var(--third-color);
+    color: var(--primary-color);
+    box-shadow: 6px 4px 4px 3px var(--fourth-color);
+}
+/*--FIRST CONTENT SWITCHER PAGE--*/
+.tabs_content .personal-info
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.tabs_content .personal-info p
+{
+    color: var(--primary-color);
+    font-family: 'Carattere', cursive;
+    font-size: var(--wp-represent-font-size-large);
+    width: 400px;
+}
+.tabs_content .profile img 
+{
+    border: 2px solid var(--primary-color);
+    background: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 3rem;
+}
+.tabs_content .profile h1 
+{
+    font-size: var(--wp-represent-font-size-normal);
+}
+.tabs_content .profile h2
+{
+    color: var(--primary-color);
+    font-size: var(--wp-represent-font-size-small);
+    font-family: Zapf Chancery;
+}
+.tabs_content 
+{
+    margin-top: 2rem;
+    display: none;
+}
+.tabs_content--active
+{
+    display: block;
+}
+/*--SECOND CONTENT SWITCHER PAGE--*/
+.tabs_content .language
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.tabs_content .language .skill-learned
+{
+    width: 500px;
+}
+.tabs_content .language .skill-learned h2
+{
+    font-family: bold;
+    font-size: var(--wp-represent-font-size-normal);
+    font-weight: 400;
+    line-height: 6.2rem;
+    color: var(--primary-color);
+}
+.tabs_content .language .skill-star
+{
+    width: 500px;
+}
+.tabs_content .language .skill-star h3 
+{
+    font-size: var(--wp-represent-font-size-normal);
+    line-height: 6.2rem;
+    color: var(--primary-color);
+    font-family: Comic Sans MS;
+}
+/*--THIRD CONTENT SWITCHER PAGE--*/
+.tabs_content .third-content
+{
+    display: flex;
+    justify-content: center;
+}
+.tabs_content .third-content p 
+{
+    font-family: Gabriola;
+    font-size: var(--wp-represent-font-size-normal);
+    width: 500px;
+    text-align: center;
+    color: var(--primary-color);
+}

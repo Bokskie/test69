@@ -1,0 +1,41 @@
+header 
+{ 
+    width: 100%;
+    height: auto;
+    color: var(--secondary-color);
+    position: fixed;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+    transition: 0.5s;
+}
+header nav 
+{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+header nav h1 
+{
+    font-family: sans-serif;
+    font-size: var(--wp-represent-font-size-large);
+}
+/*-------------Sidebar Function-----------------------*/
+header nav .sidebar-button span 
+{
+    cursor: pointer;
+}
+/*-----------------------Social Icon-----------------*/
+header nav .social-media a
+{
+    padding: 10px;
+}
+header nav .social-media a i
+{
+    color: var(--secondary-color);
+    font-size: var(--wp-represent-font-size-medium);
+}
+/*---------------------Dark Theme Icon-----------------*/
+header nav .dark-mode span
+{
+    cursor: pointer;
+}
